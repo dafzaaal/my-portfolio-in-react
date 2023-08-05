@@ -1,0 +1,35 @@
+html {
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+
+    box-shadow: 10px 10px lightblue;
+}
+
+p {
+    margin-top: 65px;
+    font-size: 20px;
+}
+
+
+
+
+.navBar {
+    background: black;
+}
+
+.navBar a {
+    font-size: 25px;
+    padding-left: 30px;
+    color: white;
+}
+
+.navBar a:hover {
+    background-color: black;
+    color: white;
+}
