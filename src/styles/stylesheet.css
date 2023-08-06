@@ -4,29 +4,130 @@ html {
 }
 
 h1 {
+    overflow:hidden;
+    width: 0;
+    white-space: nowrap;
+    animation: typing 1s forwards;
+    border-radius: 0.75rem;
     text-align: center;
     margin-top: 50px;
     font-size: 50px;
-
-    box-shadow: 10px 10px lightblue;
+    font-weight: bolder;
 }
 
+.typewritter {
+    padding-top: 50px;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em; /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+
+button {
+    font-size: 30px;
+    color: black;
+    border: 2px solid black;
+    background-color: white;
+    width: 250px;
+    height:50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+
+img {
+    margin-left: auto;
+    margin-right: 40px;
+    margin-bottom: 25px;;
+    display: inline;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+
+img:hover {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    transition: 1.5s;
+}
+
+.about {
+    background-color: black;
+    color: white;
+}
+
+
+
+.contact {
+    width: 245px;
+    height:245px;
+}
+
+
+
 p {
-    margin-top: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 40em;
     font-size: 20px;
 }
 
+h2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 0.75rem;
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+ul {
+    display: table;
+    text-align: left;
+    vertical-align: auto;
+    list-style: none;
+}
 
 
 
 .navBar {
-    background: black;
+    padding: 1rem 1rem;
+    margin-right: 0.5rem; 
+    background: lightgrey;
+    margin-left: auto;
 }
 
 .navBar a {
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem; 
     font-size: 25px;
-    padding-left: 30px;
-    color: white;
+    font-weight: bold;
+    color: black;
 }
 
 .navBar a:hover {

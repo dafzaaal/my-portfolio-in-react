@@ -1,21 +1,59 @@
+import { Link } from 'react-router-dom'
+import contact from '../images/contact.png'
+import exp from '../images/work-exp.jpg'
+import linkedin from '../images/linkedin.png'
+
 function Home() {
   return (
-    <div className="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
-    <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@100&family=IBM+Plex+Sans:wght@100&family=Nunito:wght@200&family=Open+Sans:wght@300&family=Roboto:wght@100&family=Space+Mono&display=swap" rel="stylesheet"/>
-      <title>Home</title>
-    </head>
-    <h1>Welcome!</h1>
-    <p>
-    Hello! My name is Dawood Afzaal, I am a current Undergraduate Computer Science student at the University of Calgary <br />
-    I am currently working as a Test Automation Developer Co-op at Nokia, prior to this, I worked at Nutrien as an IT D- <br />
-    igital Delivery Co-op student where I worked with both the development and QA team during my 12-month internship period <br />
+    <html>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Asap:wght@100&family=IBM+Plex+Sans:wght@100&family=Nunito:wght@200&family=Open+Sans:wght@300&family=Roboto:wght@100&family=Space+Mono&display=swap" rel="stylesheet"/>
+          <title>Home</title>
+      </head>
 
-    </p>
 
-  </div>
+    <body>
+      <div class="container mx-auto">
+        <div class="typewritter">
+          <h1>Welcome!</h1>
+        </div>
+          
+      </div>
+      
+        <p class="shadow-lg" >
+          Hello! My name is Dawood Afzaal, I am a current Undergraduate Computer Science student at the University of Calgary 
+          I am currently working as a Test Automation Developer Co-op at Nokia, prior to this, I worked at Nutrien as an IT Digital 
+          Delivery Co-op student where I worked with both the development and QA team during my 12-month internship period 
+        </p>
+
+
+      <div>
+        <h2>Learn more about my previous work! Or contact me by clicking the mail icon.</h2>
+        <Link to="/about">
+        <Link to="/experience">
+          <img src={exp} alt="work exp icon"/> 
+
+        </Link>
+          <img src={contact} alt="contact-image" class="contact"/>
+        </Link>
+
+
+      </div>
+
+      <footer class="socials">
+        <Link to="https://www.linkedin.com/in/dawood-afzaal-36933b1a5/" target='_blank'>
+          <img src={linkedin}/>
+        </Link>
+      </footer>
+
+
+
+    </body>
+   
+    </html>
+
 
   );
 }
