@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import contact from '../images/contact.png'
 import exp from '../images/work-exp.jpg'
 import linkedin from '../images/linkedin.png'
+import about from '../images/about.jpg'
 
 function Home() {
   return (
@@ -31,12 +32,16 @@ function Home() {
 
       <div class="content">
         <h2>Learn more about my previous work! Or contact me by clicking the mail icon.</h2>
-        <Link to="/experience">
+        <Link to="/experience" title='work experience'>
           <img src={exp} alt="work exp icon"/>
         </Link>
 
-        <Link to="/contact">
+        <Link to="/contact" title='contact me'>
           <img src={contact} alt="contact-image" class="contact"/>
+        </Link>
+
+        <Link to="/about" title='about me'>
+          <img src={about} alt='about me icon' id='aboutme'/>
         </Link>
           
 

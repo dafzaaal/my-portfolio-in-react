@@ -22,23 +22,21 @@ function contact(){
 
 
             <div class="form">
-                <form action="mailto:dawoodafzaal13@gmail.com">
-                    Name <input type="text" name= "name" id="name"></input> <br /> <br/>
-                    E-mail <input type="text" name="email" id="email"></input> <br /> <br/>
-                    <textarea rows = "5" cols = "50" name = "description" id="body">
-                        Enter description here...
-                    </textarea> <br/> <br />
-                    <input type="submit" value="Submit" id="send"></input>
+                <form action="mailto:dawoodafzaal13@gmail.com" method="get" encType="text/plain">
+                    Subject: <input type="text" name= "subject" id="name" placeholder="E-mail subject..."></input> <br /> <br/>
+                    E-mail: <input type="text" name="email" id="email" placeholder="Your e-mail..."></input> <br /> <br/>
+                    <textarea rows = "5" cols = "50" name = "body" id="body" placeholder="Enter message..."></textarea> <br/> <br />
+                    <input type="submit" value="Send" id="send"></input>
                 </form>
             </div>
             
             <div class="container" id="socials">
                 <Link to="https://www.linkedin.com/in/dawood-afzaal-36933b1a5/" target="_blank">
-                    <img src={linkedin} alt="linkedin logo" />
+                    <img src={linkedin} alt="linkedin logo" id="linkedin"/>
                 </Link>
 
                 <Link to="https://github.com/dafzaaal" target="_blank">
-                    <img src={github} alt="github logo" />
+                    <img src={github} alt="github logo" id="github"/>
                 </Link>
             </div>
 
