@@ -22,7 +22,7 @@ h1 {
     white-space: nowrap; /* Keeps the content on a single line */
     margin: auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .1em; /* Adjust as needed */
-    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
   }
   
   /* The typing effect */
@@ -54,23 +54,25 @@ body {
 }
 
 
-img {
+
+
+.content img {
     margin-left: auto;
     margin-right: 40px;
     margin-bottom: 25px;;
     display: inline;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     border: 3px solid white;
 }
 
 
-img:hover {
-    height: 300px;
-    width: 300px;
-    background-color: white;
+.content img:hover {
+    height: 150px;
+    width: 150px;
     transition: 1.5s;
+    border: 7px solid white;
 }
 
 .about {
@@ -80,10 +82,6 @@ img:hover {
 
 
 
-.contact {
-    width: 245px;
-    height:245px;
-}
 
 
 
@@ -115,7 +113,10 @@ ul {
 
 
 
+
 .navBar {
+    display: flex;
+    justify-content: center;
     padding: 1rem 1rem;
     margin-right: 0.5rem; 
     background: lightgrey;
@@ -133,4 +134,56 @@ ul {
 .navBar a:hover {
     background-color: black;
     color: white;
+}
+
+.form {
+    color: black;
+    font-weight: bold;;
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 25px;
+    background-color: white;
+    border: 5px solid rgb(129, 127, 127);
+}
+
+#name {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#email {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+#body {
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+#socials {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    flex-basis: 100%;
+    height: auto;
+}
+
+#send {
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 3px solid black;
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+#send:hover {
+    color: white;
+    background-color: black;
 }

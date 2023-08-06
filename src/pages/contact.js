@@ -1,3 +1,8 @@
+import MyButton from "./button.js";
+import {Link} from 'react-router-dom'
+import linkedin from '../images/linkedin.png'
+import github from '../images/github.png'
+
 function contact(){
     return (
         <html>
@@ -9,8 +14,37 @@ function contact(){
             </head>
         </div>
 
-        <body>  
+        <body>
 
+            <div class="typewritter">
+                <h2>Fill out the form below to send me an email!</h2>
+            </div>
+
+
+            <div class="form">
+                <form action="mailto:dawoodafzaal13@gmail.com">
+                    Name <input type="text" name= "name" id="name"></input> <br /> <br/>
+                    E-mail <input type="text" name="email" id="email"></input> <br /> <br/>
+                    <textarea rows = "5" cols = "50" name = "description" id="body">
+                        Enter description here...
+                    </textarea> <br/> <br />
+                    <input type="submit" value="Submit" id="send"></input>
+                </form>
+            </div>
+            
+            <div class="container" id="socials">
+                <Link to="https://www.linkedin.com/in/dawood-afzaal-36933b1a5/" target="_blank">
+                    <img src={linkedin} alt="linkedin logo" />
+                </Link>
+
+                <Link to="https://github.com/dafzaaal" target="_blank">
+                    <img src={github} alt="github logo" />
+                </Link>
+            </div>
+
+
+            <MyButton />
+            
 
 
         </body>

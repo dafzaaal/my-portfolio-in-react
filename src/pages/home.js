@@ -29,24 +29,20 @@ function Home() {
         </p>
 
 
-      <div>
+      <div class="content">
         <h2>Learn more about my previous work! Or contact me by clicking the mail icon.</h2>
-        <Link to="/about">
         <Link to="/experience">
-          <img src={exp} alt="work exp icon"/> 
-
+          <img src={exp} alt="work exp icon"/>
         </Link>
+
+        <Link to="/contact">
           <img src={contact} alt="contact-image" class="contact"/>
         </Link>
+          
 
 
       </div>
 
-      <footer class="socials">
-        <Link to="https://www.linkedin.com/in/dawood-afzaal-36933b1a5/" target='_blank'>
-          <img src={linkedin}/>
-        </Link>
-      </footer>
 
 
 
